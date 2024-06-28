@@ -1,0 +1,6 @@
+# Ensure the URL rewrite module is enabled
+RewriteEngine On
+
+# Redirect to loginmain.php if accessing stockreplenishment-interns/
+RewriteCond %{REQUEST_URI} ^/roop/stockreplenishment-interns/$
+RewriteRule ^$ /roop/stockreplenishment-interns/loginmain.php [L,R=301]
